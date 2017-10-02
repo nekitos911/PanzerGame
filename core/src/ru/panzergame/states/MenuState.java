@@ -51,7 +51,7 @@ public class MenuState extends State {
                     break;
             case 1:
                 if (Gdx.input.isKeyPressed(Input.Keys.ENTER))
-//                leaveGame();
+                    Gdx.app.exit();
                     break;
         }
     }
@@ -71,7 +71,6 @@ public class MenuState extends State {
         batch.end();
         drawRectangle();
     }
-
     private void drawRectangle() {
         rectangle.begin(ShapeRenderer.ShapeType.Line);
         rectangle.setColor(0, 0, 0, 1);
